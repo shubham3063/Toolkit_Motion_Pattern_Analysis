@@ -1,31 +1,14 @@
-The tool is made for medical image analysis (glaucoma images) but you can use it to manipulate other images also interactively. 
+The tool is made for medical image analysis (glaucoma images) but you can use it to manipulate other images also interactively. Please refer to 'Docs' folder for the research paper on which this toolkit is based on.
 
 Buttons which are functional and tested:
 1> Browse Image
 2> Crop Image
-
 3> Panel (please use either rotation or translation for one GMP i.e. set rotation and translation parameters separately).
 	Interactive Rotation
 	Interactive Translation
-
 4> Coalesce
 5> Add New GMP
-
 6> Close GUI
-
-
-Using Toolkit.. Example:
-
-1.) Run Toolkit_MPA-> Browse Image.	          [GMP1]
-2.) Crop Image(definitely crop if dimensions exceed 1000pix.otherwise time consuming in transformation)
-   Crop Image -> Select ROI-> Double Click in ROI.[GMP1]
-3.) Translation_1: Select parameters-> Translate. [GMP1]
-4.) Add New GMP. 				  [GMP1]
-5.) Translation_2: Select parameters-> Translate. [GMP2]
-6.) Add New GMP. 				  [GMP2]
-7.) Rotation_1:    Select parameters-> Rotate.	  [GMP3]
-8.) Coalesce ->    Select Function  -> OUTPUT(GMP 1,2 & 3 combined)  [GMP3]
-9.) Close GUI.->   Close all windows.
 
 Functionalities:
 
@@ -63,12 +46,26 @@ size(rotatedImages)    => m x n x StepSize*Rounds
 
 ]
 
-
-
 5.) Coalesce: It takes all the images from all the GMPs. and then coalesce the images according to the specified function. 
 It also Resizes the images such that all images have dimensions equal to max_row_size and max_col_size calculated from all the images so that the dimensions are consistent.
 
 New functions can be added easily by checking the callback routine of the Coalesce button.
+
+
+
+
+Using Toolkit.. Example:
+
+1.) Run Toolkit_MPA-> Browse Image.	          [GMP1]
+2.) Crop Image(definitely crop if dimensions exceed 1000pix.otherwise time consuming in transformation)
+   Crop Image -> Select ROI-> Double Click in ROI.[GMP1]
+3.) Translation_1: Select parameters-> Translate. [GMP1]
+4.) Add New GMP. 				  [GMP1]
+5.) Translation_2: Select parameters-> Translate. [GMP2]
+6.) Add New GMP. 				  [GMP2]
+7.) Rotation_1:    Select parameters-> Rotate.	  [GMP3]
+8.) Coalesce ->    Select Function  -> OUTPUT(GMP 1,2 & 3 combined)  [GMP3]
+9.) Close GUI.->   Close all windows.
 
 
 BUGS and ISSUES: 
